@@ -1,0 +1,18 @@
+body {
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    background-image: url('https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+}
+div {
+    color: black;
+}
+
+table {
+    text-align: center;
+}
+th,
+td {
+    padding: 10px;
+    outline: 1px solid black;
+}
