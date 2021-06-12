@@ -5,9 +5,9 @@ body{
 #clockContainer {
     position: relative;
     margin: auto;
-    height: 40vw;
+    height: 20vw;
     /*to make the height and width responsive*/
-    width: 40vw;
+    width: 20vw;
     background-color: aqua;
     border-radius: 100%;
 
