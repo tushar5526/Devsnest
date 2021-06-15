@@ -1,5 +1,5 @@
 setInterval(() => {
-    d = new Date();
+    let d = new Date();
     hr = d.getHours();
     min = d.getMinutes();
     sec = d.getSeconds();
