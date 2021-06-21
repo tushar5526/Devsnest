@@ -20,10 +20,11 @@
 .grid-item {
     width: 20px;
     height: 20px;
+    border: 1px solid #e24e3f
 }
 
 .clicked {
-    background-color: red;
+    background-color: #DE4738;
 }
 
 .clicked:hover {
