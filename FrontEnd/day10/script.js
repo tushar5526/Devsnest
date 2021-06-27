@@ -27,6 +27,7 @@ function rotateStart() {
     if (parseInt(cardQ.length) >= 2 || this.classList.contains('rotateStart')) {
         return;
     }
+    this.classList.remove('rotateEnd');
     this.classList.add('rotateStart');
     this.getElementsByTagName('img')[0].style.visibility = 'visible';
     console.log(this.getAttribute('seed'));
@@ -37,15 +38,24 @@ function rotateStart() {
 function check() {
     console.log('length of ', cardQ.length)
     if (parseInt(cardQ.length) <= 1) return;
-    let first = cardQ.pop();
-    let second = cardQ.pop();
+    let first = cardQ[0];
+    let second = cardQ[1];
     console.log(first, second);
-    first.classList.toggle('rotateStart');
-    first.classList.toggle('rotateEnd');
-    second.classList.toggle('rotateStart');
-    second.classList.add('rotateEnd');
-    first.getElementsByTagName('img')[0].style.visibility = 'hidden';
-    second.getElementsByTagName('img')[0].style.visibility = 'hidden';
+    if (first.getAttribute('seed') === second.getAttribute('seed')) {
+        cardQ.pop();
+        cardQ.pop();
+        return;
+    }
+    setTimeout(() => {
+        cardQ.pop();
+        cardQ.pop();
+        first.classList.remove('rotateStart');
+        first.classList.add('rotateEnd');
+        second.classList.remove('rotateStart');
+        second.classList.add('rotateEnd');
+        first.getElementsByTagName('img')[0].style.visibility = 'hidden';
+        second.getElementsByTagName('img')[0].style.visibility = 'hidden';
+    }, 1000)
 
 }
 
