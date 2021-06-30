@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+.card {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.question {
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.options {
+    padding: 10px;
+}
+
+.choice {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightslategray;
+    color: white;
+}
+
+.choice>input {
+    cursor: pointer;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.answer {
+    background-color: lightgrey;
+    border-radius: 4px;
+    text-align: center;
+    visibility: hidden;
+    height: 0;
+}
+
+.submit {
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.answer-show {
+    transition: 1.2s;
+    padding: 10px;
+    visibility: visible;
+    height: auto;
+}
+
+
+.dummy {
+    display: none;
+}
+
+.wrong {
+    background-color: lightcoral;
+}
+
+.right {
+    background-color: lightgreen;
+}
