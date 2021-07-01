@@ -36,7 +36,7 @@ function renderQuestions(data) {
         let id = parseInt(Math.random() * 79) % options.children.length;
         options.insertBefore(choice, options.children[id]);
 
-        card.querySelector('.answer').textContent = `The correct answer is : ${ele.correct_answer}`
+        card.querySelector('.answer').innerHTML = `The correct answer is : ${ele.correct_answer}`
         page.appendChild(card);
     })
 
