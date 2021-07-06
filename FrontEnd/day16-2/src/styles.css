@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.board {
+    border: 10px solid black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 290px;
+    height: 290px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+}
+
+.cell:nth-child(odd) {
+    background-color: black;
+
+}
+
+.cell:nth-child(even) {
+    background-color: whitesmoke;
+}
