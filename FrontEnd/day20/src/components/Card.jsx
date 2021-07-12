@@ -13,7 +13,7 @@ function Card({ index, setData, cals, name, data }) {
         return (
             <div>
                 <p>{name}</p>
-                <p>You have consumed {cals} today</p>
+                <p>You have consumed {cals} calories today</p>
             </div>
         );
     }
