@@ -15,7 +15,6 @@ function Edit({ cals, name, data, index, setData, setEditMode }) {
             }
             return ele;
         })
-        console.log('done clled');
         setData(newData);
         setEditMode(false);
     }

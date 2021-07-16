@@ -1,14 +1,15 @@
 import '../styles.css';
 import Card from './Card';
 import { useState } from 'react';
-import { Button, Input, TextField } from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
+import { nanoid } from 'nanoid';
 
 function InputNewCard({ data, setData }) {
 
     const [cals, setCals] = useState(0);
     const [name, setName] = useState("Food Item")
     function addCard() {
-        const newData = [...data, { "cals": cals, "name": name }]
+        const newData = [...data, { "cals": cals, "name": name, "id": nanoid() }]
         setData(newData);
     }
 
@@ -36,7 +37,7 @@ function Container() {
             <InputNewCard data={data} setData={setData} />
             {
                 data.map((ele, index) => {
-                    return <Card key={index} setData={setData} cals={ele.cals} name={ele.name} index={index} data={data} />
+                    return <Card key={ele.id} setData={setData} cals={ele.cals} name={ele.name} index={index} data={data} />
                 })
             }
         </div>
