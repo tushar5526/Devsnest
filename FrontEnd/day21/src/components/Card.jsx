@@ -5,13 +5,13 @@ import { useState } from 'react';
 function Edit({ cals, name, data, index, setData, setEditMode }) {
 
     const [editCals, setEditCals] = useState(cals);
-    const [editname, setEditName] = useState(name);
+    const [editName, setEditName] = useState(name);
 
     function editDone() {
         const newData = data.filter((ele, id) => {
             if (id === index) {
                 ele.cals = editCals;
-                ele.name = editname;
+                ele.name = editName;
             }
             return ele;
         })
@@ -28,8 +28,8 @@ function Edit({ cals, name, data, index, setData, setEditMode }) {
     }
     return (
         <div className="card">
-            <Input type="text" onChange={handleNameChange} label="Food Item" value={name} />
-            <Input type="number" onChange={handleCalsChange} label="Calories" value={cals} />
+            <Input type="text" onChange={handleNameChange} label="Food Item" value={editName} />
+            <Input type="number" onChange={handleCalsChange} label="Calories" value={editCals} />
             <Button variant="contained" onClick={editDone}>Done</Button>
         </div>
     )
