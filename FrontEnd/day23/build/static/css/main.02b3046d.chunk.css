@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box}.page{height:100vh;justify-content:center}.container,.page{min-width:400px;margin:auto;display:flex}.container{height:400px;flex-direction:column;overflow-y:scroll;padding:20px;width:100%;max-width:600px}.card,.container>div{display:flex;justify-content:space-between}.card{font-family:Roboto;border-radius:10px;padding:20px;margin-top:20px;background-color:#d3d3d3;align-items:center}
+/*# sourceMappingURL=main.02b3046d.chunk.css.map */
