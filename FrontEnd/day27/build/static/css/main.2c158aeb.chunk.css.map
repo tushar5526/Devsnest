@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACI,iBACJ,CAEA,aACI,WAAY,CACZ,YACJ","file":"main.2c158aeb.chunk.css","sourcesContent":[".App{\n    text-align: center;\n}\n\ninput, button{\n    margin: 10px;\n    padding: 10px;\n}"]}
