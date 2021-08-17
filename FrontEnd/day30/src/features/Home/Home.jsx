@@ -11,8 +11,8 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="container mt-3">
-            <div className="row">
+        <div className="container">
+            <div className="row p-2" >
                 {productsData ? (
                     productsData.map(product => <ItemCard
                         title={product.title}

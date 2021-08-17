@@ -15,7 +15,7 @@ import {
 const NavBar = () => {
     return (
         <Router>
-            <div className="fluid-container">
+            <div className="container">
                 <div className="row navbar text-decoration-none">
                     <div className="col-sm-2 col-6"><Link to="/">REDUX-STORE</Link></div>
                     <div className="offset-2 offset-sm-8 col-sm-1 col-2"><Link to="/"><i style={{ fontSize: "1.5rem" }} className="bi bi-heart-fill"></i></Link></div>

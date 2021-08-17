@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+body{
+    background: #f2f4f8;
+}
+
 .navbar{
     background-color: whitesmoke;
 }
@@ -17,3 +21,4 @@
 .navbar a:hover {
     color: lightcoral;
 }
+
