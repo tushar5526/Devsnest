@@ -56,8 +56,8 @@ const FavouriteButton = (props) => {
 const ItemCard = (props) => {
     const { title, imgSrc, description, price, id } = props;
     return (
-        <div className="col-12 col-sm-3 mt-4 offset-sm-1 d-flex align-items-stretch item-card">
-            <div style={{ width: "100%", position: "relative" }}>
+        <div className="col-12 col-sm-4 p-sm-5 mt-4 d-flex align-items-stretch">
+            <div style={{ width: "100%", position: "relative" }} className="item-card">
                 <img className="card-img-top rounded" src={imgSrc} alt={title} style={{ objectFit: "scale-down", height: "250px" }} />
                 <div className="card-body">
                     <div className="col-12">
