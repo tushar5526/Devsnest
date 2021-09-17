@@ -6,6 +6,10 @@ var register = require('../controllers/regsiterController');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
+  const sess = req.session;
+  sess.username = 'rachit';
+  sess.hi = 'afldsaf';
+  console.log(sess)
   res.render('index', { title: 'Express' });
 });
 
